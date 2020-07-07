@@ -16,6 +16,8 @@ $(document).ready(function(){
 		var answerText = this.listOfAnswers[randomIndex];
 		//console out the question with the chosen answer
 		$("#answer").text( answerText );
+
+		$("#answer").hide();
 	};
 		
 	// run the funciton/method to output the response
@@ -25,5 +27,6 @@ $(document).ready(function(){
 	};
 		
 		$("#questionButton").click( onClick );
+		$("#answer").hide();
 		
 	});
